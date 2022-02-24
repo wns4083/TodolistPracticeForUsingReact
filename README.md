@@ -1,3 +1,5 @@
+udemy 한입 크기로 잘라먹는 React 강의 보고 작성하였습니다.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
