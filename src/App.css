@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish:400');
+
+.App{
+    font-family: "Stylish";
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    background: url(../public/Todolist_background.jpg) no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+#root{
+    background: #fff;
+}
+
+/* Button */
+.controller{
+    display: inline-flex;
+    flex-direction: column;
+    width:100px;
+    transform: translateX(-50%);
+}
+.CustomButton{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    white-space: nowrap;
+}
+.CustomButton_default{
+    background: #eff099;
+}
+.CustomButton_Done{
+    background: chartreuse;
+}
+.CustomButton_Miss{
+    background: cornflowerblue;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgba(238, 230, 230, 0.719);
+    box-sizing: border-box;
+    position: relative;
+}
+.head_logo{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 300px;
+}
+.head_subword{
+    text-align: center;
+    margin-left: 20px;
+    font-size: 24px;
+    width: 100px;
+    
+}
+.head_mainword{
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* main section */
+.mainWrrap{
+    width: 1200px;
+    height: 600px;
+    background: rgba(238, 230, 230, 0.3);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-family: sans-serif;
+}
+/* main Date */
+.dateControl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+div[class*=head]{
+    float: left;
+}
+.head_btn_right{
+    float:none;
+}
+/*main subject*/
+.mainWrrap h2{
+    text-align: center;
+}
+
+/*menu control*/
+.ListText .menu_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.ListText .menu_wrapper .right_col{
+    flex-grow: 1;
+}
+.ListText .menu_wrapper .right_col button{
+    width: 100%;
+}
+.ListText .ControlMenu{
+    width: 200px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecccec;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+/* ListItem */
+.ListItem{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    border: 1px solid rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    float: left;
+}
+.ListItem .contentWrrap{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+.ListItem .listDate{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+/* ListEditor */
+.ListEditor {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.ListEditor section{
+    border: 1px solid #ecccec;
+}
+.ListEditor h4{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.ListEditor .input_content{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecccec;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    height: 34px;
+}
+.ListEditor .star_value{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.ListEditor textarea{
+    font-size: 18px;
+    box-sizing: border-box;
+    resize: none;
+    width: 100% !important;
+    height: 200px !important;
+    border: none;
+    border-radius: 3px;
+    background: #f8f6f8;
+    padding: 5px;
+}
+.ListEditor .control_btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* star svae */
+.starItem{
+    width: 100%;
+    text-align: center;
+}
+.starItem span:last-child{
+    display: block;
+}
+.starItem_off{
+    background: transparent;
+}
+
+.starItem_on_1{
+    background: #c5e4e0;
+}
+.starItem_on_2{
+    background: #8ae2a8;
+}
+.starItem_on_3{
+    background: #d4f59e;
+}
+.starItem_on_4{
+    background: #97a5f5;
+}
+.starItem_on_5{
+    background: #e97e63;
+}
+
+/* Diary */
+
+.listDetail{
+    width: 100%;
+}
+.listDetail section{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.listDetail h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+.listDetail .List_wrraper{
+    background-color: #8ae2a8;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.listDetail .List_wrraper_1{
+    background-color: #c5e4e0;
+}
+.listDetail .List_wrraper_2{
+    background-color: #8ae2a8;
+}
+.listDetail .List_wrraper_3{
+    background-color: #d4f59e;
+}
+.listDetail .List_wrraper_4{
+    background-color: #97a5f5;
+}
+.listDetail .List_wrraper_5{
+    background-color: #e97e63;
+}
+
+.listDetail .list_content_wrraper{
+    width: 100%;
+    background-color: #fffccc;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+.listDetail .list_content_wrraper p{
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+}
